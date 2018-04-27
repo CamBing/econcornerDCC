@@ -164,3 +164,19 @@ top.10.graph <- zarDCC %>% filter(Pairs %in% top.10.reg.list$Pairs) %>%
   ggtitle("Top 10 Dynamic Conditional Correlations: ZAR") 
 
 top.10.graph
+
+#interactive graph
+library(plotly)
+plot.10 <- zarDCC %>% filter(Pairs %in% c(top.10.reg.list.avg$Pairs))
+plot.10$Pairs <- gsub(plot.10$Pairs, pattern = "ZAR_", replacement = "")
+
+p <- ggplot(data=plot.10, aes(x=date, y=Rho, colour = Pairs)) +
+  geom_line() + 
+  theme_hc() +
+  ggtitle("Top 10 Dynamic Conditional Correlations: ZAR") +
+  xlab("Date")
+
+
+ggplotly(p, tooltip = "Pairs")
+
+         

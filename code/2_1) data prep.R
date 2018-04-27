@@ -38,35 +38,12 @@ data <-
 #****
  
 # Trimming the dataset ----------------------------------------------------
-Pct_Valid <- 0.8 # This can change of course. 70% valid data over period at least
 StartDate <- ymd(20031201)
 EndDate <- ymd(20180404) #	2018-04-04
 
 # Shorten timeframe
-data <- 
-  data %>% filter(date >= StartDate & date <= EndDate)
-
-NDates <- length(unique(data %>% pull(date)) ) 
-
-# Only used shares still active:
-ActiveTickers <-
-  data %>% 
-  filter(date >= ymd(20180404)) %>%
-  group_by(variable) %>% 
-  mutate(N_Valid = ifelse(is.na(value) == TRUE, 0, 1)) %>% 
-  summarise(S = sum(N_Valid)) %>% 
-  filter(S >0) %>% pull(variable)
-
-HoldTickers <-
-  data %>% 
-  filter(variable %in% ActiveTickers) %>% 
-  group_by(variable) %>% 
-  mutate(N_Valid = ifelse(is.na(value) == TRUE, 0, 1) ) %>% summarise(N_Valid_Pct = sum(N_Valid)/NDates) %>% 
-  filter(N_Valid_Pct >= Pct_Valid) %>% pull(variable) %>% unique()
-
 rtn <- 
-  data %>% 
-  filter(variable %in% HoldTickers | variable == "ZAR") 
+  data %>% filter(date >= StartDate & date <= EndDate)
 
 
 # Calculate returns -------------------------------------------------------
