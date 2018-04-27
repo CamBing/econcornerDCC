@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1524583707652.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3972880117",
+    "id" : "8F07CC4D",
+    "lastKnownWriteTime" : 1524665463,
+    "last_content_update" : 1524665463364,
+    "path" : "C:/econcorner/code/1) data.R",
+    "project_path" : "code/1) data.R",
+    "properties" : {
+        "cursorPosition" : "46,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

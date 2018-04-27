@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1524664029381.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "214031539",
+    "id" : "24B30E6",
+    "lastKnownWriteTime" : 1524822159,
+    "last_content_update" : 1524823294314,
+    "path" : "C:/econcorner/code/3) regression analysis.R",
+    "project_path" : "code/3) regression analysis.R",
+    "properties" : {
+        "cursorPosition" : "31,36",
+        "scrollLine" : "9",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1524665590986.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "2|12|16|0|\n",
+    "hash" : "1447664417",
+    "id" : "C81AA4ED",
+    "lastKnownWriteTime" : 1524819866,
+    "last_content_update" : 1524819866588,
+    "path" : "C:/econcorner/code/4) dcc analysis.R",
+    "project_path" : "code/4) dcc analysis.R",
+    "properties" : {
+        "cursorPosition" : "166,0",
+        "scrollLine" : "22",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
